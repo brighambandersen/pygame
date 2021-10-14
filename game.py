@@ -30,8 +30,6 @@ mario_left = flip(mario_right, True, False)
 curr_mario = mario_right
 x_pos = X_START
 y_pos = Y_MAX
-is_jumping = False
-jump_count = 10
 
 def move_x(distance):
   global x_pos
