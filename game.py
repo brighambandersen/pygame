@@ -18,6 +18,7 @@ Y_MIN = 0
 Y_MAX = 645
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption("Mario")
 
 bg_img = load(os.path.join('assets','background.jpg'))
 bg_img = scale(bg_img, (SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -29,6 +30,8 @@ mario_left = flip(mario_right, True, False)
 curr_mario = mario_right
 x_pos = X_START
 y_pos = Y_MAX
+is_jumping = False
+jump_count = 10
 
 def move_x(distance):
   global x_pos
